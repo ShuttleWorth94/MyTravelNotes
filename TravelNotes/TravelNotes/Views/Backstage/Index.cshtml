@@ -1,0 +1,193 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var photos = ViewBag.photos;
+    var articles = ViewBag.articles;
+}
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    th {
+        font-size: 16px; /* 修改字体大小为 16 像素 */
+    }
+    tr:nth-child(even) {
+        background-color: var(--color-yellow);
+    }
+
+    tr:first-child {
+        background-color: lightblue;
+    }
+    .imgDefault {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    #searchPanel{
+        margin:5px;
+    }
+
+
+    .articleViewLink:hover{
+        cursor:pointer;
+        font-weight:bold;
+        text-decoration:underline;
+        color:gray;
+    }
+
+    .toggle{
+        background-color: #ccc;
+        border: 1px solid #999;
+        color: #333;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-top-left-radius: 10px; /* 左上角圆角 */
+        border-top-right-radius: 10px; /* 右上角圆角 */
+        font-size:16px;
+    }
+    .selected {
+        background-color: lightblue; /* 设置被选中时的背景色 */
+        color: #fff; /* 设置选中时的文字颜色 */
+    }
+
+    #UpperRow{
+        margin-bottom:10px;
+    }
+</style>
+<div class="row" id="UpperRow">
+    <div class="col">
+        <div id="searchPanel">
+            <form action="/Backstage/Index" method="get" class="d-flex">
+                <div class="me-2">
+                    <label for="userIdInput" class="visually-hidden">UserId:</label>
+                    <input type="text" class="form-control" id="userIdInput" name="UserId" placeholder="UserId">
+                </div>
+                <div class="me-2">
+                    <label for="userNameInput" class="visually-hidden">UserName:</label>
+                    <input type="text" class="form-control" id="userNameInput" name="userName" placeholder="UserName">
+                </div>
+                <button type="submit" class="btn btn-primary">查詢</button>
+            </form>
+        </div>
+    </div>
+@*     <div class="col-auto ml-auto">
+        <a href="/Backstage/Statistics">統計圖表</a>
+    </div> *@
+</div>
+
+
+<div>
+    <div class="row">
+        <div class="col-auto">
+            <button id="photoButton" class="toggle" onclick="toggleSelection('Photo')">Photo</button>
+        </div>
+        <div class="col-auto">
+            <button id="articleButton" class="toggle" onclick="toggleSelection('Article')">Article</button>
+        </div>
+    </div>
+    <div id="photoPanel">
+        <table>
+            <tr>
+                <th>UserId</th>
+                <th>UserName</th>
+                <th>PhotoId</th>
+                <th>PhotoName</th>
+                <th>photo</th>
+                <th>修改</th>
+            </tr>
+            @foreach (var item in photos)
+            {
+                <tr>
+                    <td>@item.user.UserId</td>
+                    <td>@item.user.Nickname</td>
+                    <td>@item.photo.PhotoId</td>
+                    <td>@item.photo.PhotoTitle</td>
+                    <td><img src="@item.photo.PhotoPath" alt="Alternate Text" class="imgDefault" /></td>
+                    <td><button onclick="deletePhoto(@item.photo.PhotoId)" class="btn btn-danger">屏蔽</button></td>
+                </tr>
+            }
+        </table>
+    </div>
+    <div id="articlePanel">
+        <table>
+            <tr>
+                <th>UserId</th>
+                <th>UserName</th>
+                <th>ArticleId</th>
+                <th>ArticleTitle</th>
+                <th>修改</th>
+            </tr>
+            @foreach (var item in articles)
+            {
+                <tr>
+                    <td>@item.user.UserId</td>
+                    <td>@item.user.Nickname</td>
+                    <td>@item.article.ArticleId</td>
+                    <td onclick="articleView(@item.article.ArticleId)" class="articleViewLink">@item.article.Title</td>
+                    <td><button onclick="deleteArticle(@item.article.ArticleId)" class="btn btn-danger">屏蔽</button></td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+
+
+<script>
+    $(function(){
+        toggleSelection('Photo');
+    })
+    function toggleSelection(toggle) {
+        if (toggle === 'Photo') {
+            $('#photoButton').addClass('selected');
+            $('#articleButton').removeClass('selected')
+            $('#photoPanel').css('display', 'block');
+            $('#articlePanel').css('display', 'none');
+        } 
+        else if (toggle === 'Article') {
+            $('#articleButton').addClass('selected');
+            $('#photoButton').removeClass('selected');
+            $('#articlePanel').css('display', 'block');
+            $('#photoPanel').css('display', 'none');
+        }
+    }
+    function deletePhoto(photoId) {
+        var confirmation = confirm("確定要刪除這張圖片嗎？");
+        if (confirmation) {
+            $.ajax({
+                url: "/Backstage/DeletePhotos",
+                type: "post",
+                data: { photoId: photoId },
+                success: function () {
+                    window.location.href = "/Backstage/Index";
+                }
+            });
+        }
+    }
+    function deleteArticle(articleId) {
+        var confirmation = confirm("確定要刪除這篇文章嗎？");
+        if (confirmation) {
+            $.ajax({
+                url: "/Article/Delete",
+                type: "post",
+                data: { articleId: articleId },
+                success: function () {
+                    window.location.href = "/Backstage/Index";
+                }
+            });
+        }
+    }
+    function articleView(articleId) {
+        window.open("/Article/ArticleView?articleId=" + articleId)
+    }
+</script>

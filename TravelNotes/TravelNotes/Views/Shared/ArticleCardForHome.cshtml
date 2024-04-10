@@ -1,0 +1,112 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
+*@
+@{
+    Layout = null;
+}
+@using System.Text.RegularExpressions;
+@model article
+@{
+
+    var article = Model;
+    string content = Model.Contents == null ? "" : Model.Contents;
+    content = Regex.Replace(content, @"<img\b[^>]*>", "");
+}
+<style>
+    .outerDiv {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .headShotImg {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+
+    .inner1 {
+        flex:8;
+    }
+
+    .inner2 {
+        flex: 2;
+    }
+
+    .titleContainer {
+        overflow: hidden; /* 隐藏溢出内容 */
+        width: 500px;
+    }
+
+    .partialViewTitle {
+        font-weight: bold;
+        font-size: 25px;
+        white-space: nowrap; /* 禁止换行 */
+        overflow: hidden; /* 隐藏溢出内容 */
+        text-overflow: ellipsis; /* 显示省略号 */
+        cursor: pointer;
+    }
+
+        .partialViewTitle:hover {
+            text-decoration: underline;
+        }
+
+    .partialViewSubTitle {
+        font-size: 15px;
+        white-space: nowrap; /* 禁止换行 */
+        overflow: hidden; /* 隐藏溢出内容 */
+        text-overflow: ellipsis; /* 显示省略号 */
+    }
+
+    .articleContent {
+        overflow: hidden;
+        height: 200px;
+        width: 500px;
+    }
+
+    .articleImage {
+        width: 200px;
+        height: 200px;
+    }
+</style>
+
+<div>
+
+    <div class="titleContainer">
+        <div onclick="articleView(@article.ArticleId)" class="partialViewTitle">@article.Title</div>
+        <div class="partialViewSubTitle">@article.Subtitle</div>
+    </div>
+    <div class="outerDiv">
+        <div class="inner1">
+            <div class="articleContent articleContent_@article.ArticleId ">
+            </div>
+        </div>
+        <div class="inner2">
+            <img src="@article.Images" class="articleImage" />
+        </div>
+    </div>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+@* <script src="~/lib/_js/jquery-3.6.0.js"></script> *@
+<script src="https://cdn.tiny.cloud/1/cx5w3vy6l6bg0senjow539pjj585n4wqopo9s4r3viuyx88c/tinymce/6/tinymce.min.js"
+        referrerpolicy="origin"></script>
+<script>
+    var backendData_@article.ArticleId = @Html.Raw(Json.Serialize(content));
+    if (backendData_@article.ArticleId == null) {
+                backendData_@article.ArticleId = "";
+    }
+    //console.log(backendData_@article.ArticleId);
+    $(function () {
+        $('.articleContent_@article.ArticleId').html(backendData_@article.ArticleId);
+
+    });
+    function articleView(articleId) {
+        window.location = '/Article/ArticleView?articleId=' + articleId;
+    }
+   
+    
+</script>

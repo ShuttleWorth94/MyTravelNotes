@@ -1,0 +1,119 @@
+﻿@model List<Friend>
+<style>
+    #friendList {
+        border-radius: 50px;
+        background-color: whitesmoke;
+    }
+
+
+    .friendListUnit {
+        position: relative;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+        .friendListUnit:nth-child(1) {
+            flex: 1;
+        }
+
+        .friendListUnit:nth-child(2) {
+            flex: 2;
+        }
+
+        .friendListUnit:nth-child(3) {
+            flex: 2;
+        }
+
+        .friendListUnit:nth-child(4) {
+            flex: 3;
+        }
+
+    #friendList div:first-child {
+        border-radius: 50px 50px 0 0;
+    }
+
+    #friendList div:last-child {
+        border-radius: 0 0 50px 50px;
+    }
+
+    .friendListUnit:hover {
+        background-color: antiquewhite;
+        transition: 0.3s;
+    }
+
+    .friendListUnit:not(:hover) {
+        background-color: whitesmoke;
+        transition: 0.3s;
+    }
+
+    .friendListUnit > * {
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .friendListUnit > button {
+        position: relative;
+        height: 3rem;
+        top: 1rem;
+        border-radius: 1rem;
+    }
+</style>
+<h1>朋友列表</h1>
+@*<label for="searchTerm">查名字</label>
+<input id="searchTerm" />*@
+<div id="friendList">
+    @foreach (var item in Model)
+    {
+        <div class="friendListUnit">
+            @*<p>流水號:@item.uuid</p>*@
+            @*<p>目前使用者:@item.UserId</p>*@
+            <p>Id:@item.FriendId</p>
+            <p>名稱:@item.FriendUser.UserName</p>
+            <p>暱稱:@item.FriendUser.Nickname</p>
+
+            <a href="/PersonalPage/PersonalPage/?userId=@item.FriendUser.UserId" style="display: block; border-radius: 100rem;">
+                @if (item.FriendUser?.Headshot == null)
+                {
+                    <img class="rounded-circle" src="/images/userImageDefault.jpg" alt="" style="width:100px;height:100px;">
+                }
+                else
+                {
+                    <img class="rounded-circle" src=@item.FriendUser.Headshot alt="" style="width:100px;height:100px;">
+                }
+            </a>
+            @{
+                string userId;
+                ViewContext.HttpContext.Request.Cookies.TryGetValue("UsernameCookie", out userId);
+            }
+            @if (Convert.ToInt32(userId) != item.FriendId)
+            {
+                <button class="endFriendshipBtn">解除好友關係</button>
+            }
+        </div>
+    }
+</div>
+@*
+    <p>@item.FriendUser.UserId</p>
+    <p>@item.FriendUser.UserName</p>
+    <p>@item.FriendUser.Introduction</p>
+    <p>@item.FriendUser.Gender</p>
+
+<label for="Sender">送出邀請的UserId</label>
+
+<input id="Sender" />
+<label for="Receiver">對象的UserId</label>
+<input id="Receiver" />
+<button id="send_Friend_Request_Button">Send</button>
+<a href="/FriendRequests/@ViewContext.HttpContext.Request.Path.Value?.Split("/")[2]">得到的邀請</a>
+<a href="/FriendRequestsSent/@ViewContext.HttpContext.Request.Path.Value?.Split("/")[2]">送出的邀請</a>
+
+<script src="~/js/ai/friendRequest.js" defer></script>*@
+
+<script defer>
+    if (document.getElementById("friendList").children.length == 1) {
+        document.querySelector(".friendListUnit").style = "border-radius: 50px;";
+    }
+</script>
+<script src="~/js/Friend.js"></script>

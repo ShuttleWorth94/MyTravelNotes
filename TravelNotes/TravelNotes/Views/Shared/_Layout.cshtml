@@ -1,0 +1,250 @@
+@{
+	bool isLogin = true;
+	string userId = "";
+	if (!Context.Request.Cookies.TryGetValue("UsernameCookie", out userId))
+	{
+		isLogin = false;
+	}
+	bool isHeadShotExit = true;
+	string headshotPath = "";
+	if (!Context.Request.Cookies.TryGetValue("UserheadshotCookie", out headshotPath))
+	{
+		isHeadShotExit = false;
+	}
+
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - Blog</title>
+
+
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/TravelNotes.styles.css" asp-append-version="true" />
+
+
+	<script src="~/lib/jquery/dist/jquery.js"></script>
+	<script src="~/lib/jquery/dist/jquery-ui.js"></script>
+	
+	<script src="~/js/site.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	
+	<script src="https://kit.fontawesome.com/f749459404.js" crossorigin="anonymous"></script>
+	<style>
+		:root {
+			--side-color: #728CA3;
+			--background-color: #F3E4C6;
+			--border-color: hsl(210, 30%, 88%);
+			--border-hover-color: rgba(114, 140, 163, 1);
+			--sideBarSpace: 100px;
+			--color1: #DCD9C6;
+			--color2: #B5C1B4;
+			--color3: #74593D;
+			--color4: #3F3232;
+			--color5: #1B1924;
+			--color-yellow:#FFF3C1;
+			--color-pink: #FFD8B1;
+			--color-blue: #C6E2FF;
+		}
+
+		body {
+			background-color: var(--background-color);
+			margin: 0;
+			padding: 0;
+		}
+
+		#siteLogo {
+			width: 50px;
+			border-radius: 50%;
+		}
+
+		#allContainer {
+			display: flex;
+		}
+
+		#sideBarSpace {
+			width: var(--sideBarSpace);
+		}
+
+		#sideBar {
+			width: 100px;
+			height: 100%;
+			position: fixed;
+			right: 0px;
+			top: 0px;
+			background-color: var(--side-color);
+			border-radius: 10px; /* 圆角半径 */
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* 阴影 */
+			text-align: center;
+			border-left: 5px solid var(--border-color);
+			transform: translateX(0%);
+			z-index: 99999;
+		}
+
+		#sideBarSlider {
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			left: -40px;
+			width: auto;
+			padding: 15px;
+			color: white;
+			font-weight: bold;
+			font-size: 18px;
+			transition: 0.6s ease;
+			border-radius: 3px 3px 3px 3px;
+			background-color: var(--border-color);
+		}
+
+
+			#sideBarSlider:hover {
+				background-color: var(--border-hover-color);
+			}
+
+		#sideBar {
+		}
+
+			#sideBar a {
+				text-decoration: none;
+				color: white;
+			}
+
+			#sideBar span {
+				text-decoration: none;
+				color: white;
+			}
+
+		.headShotLink {
+			border-radius: 50%;
+			width: 50px; /* 設置圖片的寬度 */
+			height: 50px; /* 設置圖片的高度 */
+			cursor: pointer
+		}
+	</style>
+
+</head>
+
+
+<body>
+
+	<div id="sideBar">
+		<div class="row my-4">
+			<a asp-controller="Home" asp-action="Index">
+				<img src="~/images/Logo_text_big.webp" alt="Alternate Text" id="siteLogo" />
+			</a>
+		</div>
+		<div class="row my-4">
+			@if (!isLogin)
+			{
+				<a asp-controller="Member" asp-action="Login">
+					<i class="fa-solid fa-user fa-2xl" style="color: #ffffff;"></i>
+				</a>
+			}
+			else
+			{
+
+				<a asp-controller="Member" asp-action="Logout">
+					<i class="fa-solid fa-right-from-bracket fa-lg" style="color: #ffffff;"></i>
+				</a>
+			}
+		</div>
+
+		@if (isLogin)
+		{
+			<div class="row my-4">
+				<a asp-controller="Article" asp-action="CreateDraft">
+					<i class="fa-regular fa-pen-to-square fa-sm" style="color: #ffffff;"></i>
+					<span>寫文章</span>
+				</a>
+			</div>
+			<div class="row my-4">
+				<a asp-controller="Article" asp-action="Draft">
+					<i class="fa-solid fa-list fa-sm" style="color: #ffffff;"></i>
+					<span>草稿區</span>
+				</a>
+			</div>
+			<div class="row my-4">
+				<a asp-controller="Album" asp-action="Album">
+					<i class="fa-regular fa-images fa-sm" style="color: #ffffff;"></i>
+					<span>相簿</span>
+				</a>
+			</div>
+			<div class="row my-4">
+
+				<a asp-controller="PersonalPage" asp-action="PersonalPage">
+					@if (isHeadShotExit)
+					{
+						<img src="@headshotPath" class="headShotLink">
+					}
+					else
+					{
+						<img src="/images/userImageDefault.jpg" class="headShotLink">
+					}
+				</a>
+			</div>
+		}
+
+		<div class="row my-4">
+			<a asp-controller="AiRecommend" asp-action="Index">
+				<i class="fa-regular fa-compass fa-sm" style="color: #ffffff;"></i>
+				推薦趣
+			</a>
+		</div>
+		<div class="row my-4">
+			<a asp-controller="PersonalPage" asp-action="ViewSchedule">
+				<i class="fa-solid fa-star fa-sm" style="color: #ffffff;"></i>
+				我的最愛
+			</a>
+		</div>
+		<div class="row my-4" id="backStageContainer">
+
+		</div>
+		<a onclick="sideBarSlide(this)" id="sideBarSlider">&#10095;</a>
+	</div>
+	<div id="allContainer">
+
+		<div class="container">
+			@RenderBody()
+		</div>
+		<div id="sideBarSpace">
+		</div>
+	</div>
+
+
+	<script>
+		let sideBarSpace = $('#sideBarSpace');
+		let sideBar = $('#sideBar');
+		let sideBarOpen = true;
+		function sideBarSlide(obj) {
+			sideBarOpen = !sideBarOpen;
+			if (sideBarOpen) {
+				obj.innerHTML = "&#10095;";
+				sideBarSpace.css("width", "100px");
+				sideBar.css('transform', 'translateX(0%)');
+			}
+			else {
+				obj.innerHTML = "&#10094;";
+				sideBarSpace.css("width", "0px");
+				sideBar.css('transform', 'translateX(100%)');
+			}
+
+		}
+		function Init(){
+			$.ajax({
+				url: "/Layout/GetUserInformation",
+				type:"get",
+				success: function (e) {
+					if (e == "Y") {
+						$("#backStageContainer").html("");
+						$("#backStageContainer").append('<a href="/Backstage/Index"><i class= "fa-solid fa-chart-simple fa-sm" style = "color: #ffffff;" ></i>後臺管理</a>');
+					}
+				}
+			});
+		}
+		Init();
+	</script>
+</body>
+</html>

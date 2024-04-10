@@ -1,0 +1,441 @@
+﻿@model List<TravelNotes.Models.AlbumPhotosViewModel>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
+<style>
+    #TopS {
+        display: flex;
+        align-items: center;
+        z-index: 100;
+    }
+
+        #TopS > div {
+            display: flex;
+            align-items: center;
+            z-index: 1000;
+        }
+
+    #GuidedTour > a {
+        border-radius: 10px;
+    }
+
+        #GuidedTour > a:hover {
+            background-color: whitesmoke;
+            transform: scale(1.05);
+        }
+    #A {
+        display:flex;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border: 5px solid gray;
+        border-radius: 20px;
+        width: 100%;
+        height: auto;
+        padding-top: 14px;
+    }
+
+
+    .album-container {
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        background-color:white;
+        position: relative;
+        margin-top:15px;
+        margin-bottom: 20px;
+    }
+
+    .image-container {
+        position: relative;
+        display: inline-block;
+        padding: 2.4px;
+        padding-bottom: 4px;
+    }
+
+        .image-container:hover {
+            transform: scale(1.05);
+        }
+
+        .image-container .hover-button {
+            position: absolute;
+            border:none;
+            top: 3px;
+            left: 3px;
+            width: 40px;
+            height: 40px;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            cursor: pointer;
+            background-color: black;
+            background-color: rgba(0,0,0,0.3);
+        }
+
+        .image-container:hover .hover-button {
+            opacity: 1;
+        }
+
+        .image-container img {
+            display: block;
+            width: 150px;
+            height: auto;
+            transition: transform 0.5s ease;
+            cursor: pointer;
+        }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 10000;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+    }
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+    .close1 {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 35px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 35px;
+        z-index: 9999
+
+    }
+
+    .close:hover {
+        transform: scale(1.2);
+    }
+
+    .close {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 35px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 35px;
+        z-index: 9999
+    }
+
+    #toggleMenuButton {
+        border: none;
+        font-weight: bold;
+        background-color: #F3E4C6; 
+        border-radius: 10px;
+    }
+
+    #toggleMenuButton:hover{
+            transform: scale(1.05);
+        background-color: whitesmoke;
+    }
+
+    .showUploadFormButton {
+        border: none;
+        font-weight: bold;
+        border-radius: 10px;
+        font-size: 20px;
+        background-color: white;
+    }
+
+    .edit-album-name-button {
+        border: none;
+        font-weight: bold;
+        border-radius: 10px;
+        font-size: 20px;
+        background-color: white;
+    }
+
+    .delete-album-button {
+        border: none;
+        font-weight: bold;
+        border-radius: 10px;
+        font-size: 20px;
+        background-color: white;
+    }
+</style>
+<div id="TopS">
+    <div>
+        <a class="nav-link text-dark" style="font-weight: bold;font-size:20px;" asp-area="" asp-controller="Home" asp-action="Index">TravelNotes</a>
+    </div>
+    <div id="GuidedTour" style="margin:10px;">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Album" asp-action="Photo" asp-route-userId=@ViewBag.UserPage style="font-weight: bold;font-size:20px;">我的相片</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Album" asp-action="Album" asp-route-userId=@ViewBag.UserPage style="background-color:whitesmoke;font-weight: bold;border-radius: 10px;font-size:20px;">我的相簿</a>
+        @if (@ViewBag.IsMyPage == true)
+        {
+            <a class="nav-link text-dark" asp-area="" asp-controller="Album" asp-action="Garbage" style="font-weight: bold;font-size:20px;">我的垃圾桶</a>
+        }
+    </div>
+    @if (@ViewBag.IsMyPage == true){
+        <div style="margin-left:48%;">
+            <button id="toggleMenuButton" class="nav-link text-dark" style="font-weight: bold;font-size:20px;"><i class="bi bi-plus-circle"></i> 新增相簿</button>
+        </div>
+    }
+    
+</div>
+<div id="menuContainer" style="display:none; position: absolute; background-color: whitesmoke; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); padding: 10px; z-index:999; margin-left:68%;">
+    <form asp-action="CreateFolder" method="post" id="createForm">
+        <input id="userId" type="text" style="display:none" />
+        <div class="form-group">
+            <label for="folderName">相簿名稱</label>
+            <input type="text" class="form-control" id="folderName" name="folderName" placeholder="請輸入相簿名稱">
+        </div>
+        <br />
+        <button type="submit" class="btn" style="border:1px solid black">
+            <i class="bi bi-folder-plus"></i> 新增
+        </button>
+    </form>
+    
+</div>
+    
+    <div style="position: fixed; top: 0; left: 50%; transform: translateX(-50%); width: 200px; height: 150px; z-index: 1050; display: flex; flex-direction: column; justify-content: center; text-align: center;">
+        @if (TempData["Message"] != null)
+        {
+            <div class="alert alert-warning" role="alert" id="messageAlert">
+                @TempData["Message"]
+            </div>
+        }
+        <div id="SuccessMessage" class="alert alert-success" style="display:none;">
+            刪除成功！
+        </div>
+        <div id="FalseMessage" class="alert alert-danger" style="display:none;">
+            刪除失敗！
+        </div>
+        <div id="successMessage" class="alert alert-success" style="display:none;"></div>
+        <div id="falseMessage" class="alert alert-danger" style="display:none;"></div>
+    </div>
+    
+
+<div id="editAlbumModal" class="modal">
+    <div class="modal-content">
+        <div class="close1"><i class="bi bi-x-circle"></i></div>
+        <form id="editAlbumForm">
+            <input type="hidden" id="editAlbumId" name="albumId">
+            <div class="form-group">
+                <label for="newAlbumName">新相簿名稱：</label>
+                <input type="text" class="form-control" id="newAlbumName" name="newAlbumName" required>
+            </div>
+            <button type="submit" class="btn btn-primary">保存</button>
+        </form>
+    </div>
+</div>
+
+    <div id="A">
+        <div style=" width: 96%;height:96%">
+
+            @if (Model != null && Model.Any())
+            {
+                @foreach (var viewModel in Model)
+                {
+                    <div class="album-container">
+                        <h3>@viewModel.Album!.AlbumName</h3>
+                    <div style="margin-left:73%;">
+                        @if (@ViewBag.IsMyPage == true)
+                        {
+                            <button class="showUploadFormButton" data-album-id="@viewModel.Album.AlbumId"><i class="bi bi-upload"></i>  上傳</button>
+                         
+                            <button class="edit-album-name-button" data-album-id="@viewModel.Album.AlbumId"><i class="bi bi-pencil-square"></i> 修改名稱</button>
+                            <button class="delete-album-button" data-album-id="@viewModel.Album.AlbumId"><i class="bi bi-trash"></i> 刪除相簿</button>
+                        }
+
+                        
+                        </div>
+                        <div class="uploadForm" data-album-id="@viewModel.Album.AlbumId" style="display:none;width:400px;z-index: 1000;position:absolute; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,.1);right:15%;margin-top:10px">
+                            <form asp-action="UploadPhotosToAlbum" method="post" enctype="multipart/form-data" style="display: flex; align-items: center; justify-content: space-between;">
+                                <input type="hidden" name="albumId" value="@viewModel.Album.AlbumId" />
+                                <input type="hidden" name="albumName" value="@viewModel.Album.AlbumName" />
+                                <div style="flex-grow: 1; margin-right: 10px;">
+                                    <input type="file" name="imageFiles" multiple style="width: 100%;"accept=".png, .jpg, .jpeg;">
+                                </div>
+                                <button type="submit" style="white-space: nowrap;">上傳</button>
+                            </form>
+                        </div>
+                       <hr />
+
+                        @foreach (var photo in viewModel.Photos!)
+                        {
+                            <div id="Pho-@photo.PhotoId" class="image-container">
+                                <img id="dynamicImage-@photo.PhotoId" src="@photo.PhotoPath" class="myImages" data-photo-id="@photo.PhotoId" style="width: 165px;height:165px;" alt="Photo" />
+                                @if (@ViewBag.IsMyPage == true)
+                                    {
+                                        <button id="change-image-btn-@photo.PhotoId" class="hover-button" data-album-id="@photo.AlbumId" data-photo-id="@photo.PhotoId" data-upload-date="@photo.UploadDate"><i class="bi bi-trash"></i></button>
+                                    }    
+                            </div> 
+                        }
+                        @if (!viewModel.Photos.Any())
+                        {
+                            <h5 style="text-align:center">目前沒有新增任何相片</h5>
+                        }
+
+                        <div id="myModal" class="modal">
+                            <div class="close"><i class="bi bi-x-circle"></i></div>
+                            <img class="modal-content" id="Img01">
+                        </div>
+
+
+                    </div>
+                }
+            }else
+            {
+                <h1 style="text-align:center;">目前沒有新增任何相簿</h1>
+            }
+        </div>
+        
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        document.getElementById('toggleMenuButton').addEventListener('click', function () {
+            var menu = document.getElementById('menuContainer');
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+        $('.showUploadFormButton').click(function () {
+            var albumId = $(this).data('album-id');
+            $('.uploadForm[data-album-id="' + albumId + '"]').toggle();
+        });
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("Img01");
+        var images = document.getElementsByClassName('myImages');
+        var span = document.getElementsByClassName("close")[0];
+        for (var i = 0; i < images.length; i++) {
+            var img = images[i];
+            img.onclick = function (evt) {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            }
+        }
+        if (span != null) {
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+        }
+        if (modal != null) {
+            modal.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            };
+        };
+        $(document).ready(function () {
+            $('button[id^="change-image-btn"]').click(function () {
+                var result = confirm("確定要刪除嗎？");
+                var PhotoId = $(this).data('photo-id');
+                if (result) {
+                    $.ajax({
+                        url: '/Album/AlbumPhotoToGarbage',
+                        type: 'POST',
+                        data: {
+                            photoId: PhotoId,
+                        },
+                        success: function (response) {
+                            alert('刪除成功');
+                            location.reload();
+                        },
+                        error: function (xhr, status, error) {
+                            alert('刪除失敗');
+                            location.reload();
+                        }
+                    });
+                } else {
+                    alert("刪除已取消。");
+                }
+            });
+        });
+
+
+        $(document).ready(function () {
+            $('.delete-album-button').click(function () {
+                var albumId = $(this).data('album-id');
+                var result = confirm("確定要刪除此相簿及其所有照片嗎？");
+                if (result) {
+                    $.ajax({
+                        url: '/Album/DeleteAlbum',
+                        type: 'POST',
+                        data: { albumId: albumId },
+                        success: function (response) {
+                            alert('相簿刪除成功');
+                            location.reload();
+                        },
+                        error: function (xhr, status, error) {
+                            alert('相簿刪除失敗，請重試');
+                        }
+                    });
+                }
+            });
+        });
+
+
+
+        var editModal = document.getElementById("editAlbumModal");
+        var editSpan = editModal.getElementsByClassName("close1")[0];
+
+        $('.edit-album-name-button').click(function () {
+            var albumId = $(this).data('album-id');
+            $("#editAlbumId").val(albumId);
+            editModal.style.display = "block";
+        });
+
+        editSpan.onclick = function () {
+            editModal.style.display = "none";
+        }
+
+
+        $('#editAlbumForm').submit(function (e) {
+            e.preventDefault();
+
+            $.ajax({
+                url: '/Album/EditAlbumName',
+                type: 'POST',
+                data: $(this).serialize(),
+                success: function (response) {
+                    if (response.success) {
+                        alert('相簿名稱修改成功');
+                        location.reload();
+                    } else {
+                        alert(response.message || '相簿名稱修改失敗，不能重複');
+                    }
+                },
+                error: function () {
+                    alert('請求失敗，請重試');
+                }
+            });
+        });
+        $(document).ready(function () {
+            setTimeout(function () {
+                $("#messageAlert").fadeOut("slow");
+            }, 3000);
+        });
+
+
+    </script>

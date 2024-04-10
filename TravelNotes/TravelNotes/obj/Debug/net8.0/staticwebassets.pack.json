@@ -1,0 +1,629 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TravelNotes.bundle.scp.css",
+      "PackagePath": "staticwebassets\\TravelNotes.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\css\\ai\\gptstyle2.css",
+      "PackagePath": "staticwebassets\\css\\ai\\gptstyle2.css"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\css\\ai\\step.css",
+      "PackagePath": "staticwebassets\\css\\ai\\step.css"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\css\\ai\\switchbar.css",
+      "PackagePath": "staticwebassets\\css\\ai\\switchbar.css"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\css\\ai\\typewrite.css",
+      "PackagePath": "staticwebassets\\css\\ai\\typewrite.css"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\css\\customizationbtn.css",
+      "PackagePath": "staticwebassets\\css\\customizationbtn.css"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\css\\tiny.css",
+      "PackagePath": "staticwebassets\\css\\tiny.css"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\images\\Logo_text_big.webp",
+      "PackagePath": "staticwebassets\\images\\Logo_text_big.webp"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\images\\add.png",
+      "PackagePath": "staticwebassets\\images\\add.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\images\\default.jpg",
+      "PackagePath": "staticwebassets\\images\\default.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\images\\like.png",
+      "PackagePath": "staticwebassets\\images\\like.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\images\\photo-album.png",
+      "PackagePath": "staticwebassets\\images\\photo-album.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\images\\travel-photo.jpeg",
+      "PackagePath": "staticwebassets\\images\\travel-photo.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\images\\upload.webp",
+      "PackagePath": "staticwebassets\\images\\upload.webp"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\images\\userImageDefault.jpg",
+      "PackagePath": "staticwebassets\\images\\userImageDefault.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\images\\year-photo.jpg",
+      "PackagePath": "staticwebassets\\images\\year-photo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user11\\article\\41\\articleImage\\c3a85b82-6d85-46a5-9985-9e9a4046d10e_bk.jpg",
+      "PackagePath": "staticwebassets\\img\\user11\\article\\41\\articleImage\\c3a85b82-6d85-46a5-9985-9e9a4046d10e_bk.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\album\\Test2\\20160825003352_20240326102324.png",
+      "PackagePath": "staticwebassets\\img\\user7\\album\\Test2\\20160825003352_20240326102324.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\album\\Test2\\2b3f6ff00db7a1efae21d85cfb8995eaff2da8d8_20240326102324.png",
+      "PackagePath": "staticwebassets\\img\\user7\\album\\Test2\\2b3f6ff00db7a1efae21d85cfb8995eaff2da8d8_20240326102324.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\album\\Test2\\add_20240326102324.png",
+      "PackagePath": "staticwebassets\\img\\user7\\album\\Test2\\add_20240326102324.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\album\\Test2\\images_20240326102324.jpg",
+      "PackagePath": "staticwebassets\\img\\user7\\album\\Test2\\images_20240326102324.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\album\\Test2\\like_20240326102324.png",
+      "PackagePath": "staticwebassets\\img\\user7\\album\\Test2\\like_20240326102324.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\album\\Test2\\list_20240326102324.png",
+      "PackagePath": "staticwebassets\\img\\user7\\album\\Test2\\list_20240326102324.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\album\\Test2\\photo-album_20240326102324.png",
+      "PackagePath": "staticwebassets\\img\\user7\\album\\Test2\\photo-album_20240326102324.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\album\\Test2\\photo-album_20240403115505.png",
+      "PackagePath": "staticwebassets\\img\\user7\\album\\Test2\\photo-album_20240403115505.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\album\\Test2\\user_20240326102324.png",
+      "PackagePath": "staticwebassets\\img\\user7\\album\\Test2\\user_20240326102324.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\article\\21\\articleImage\\7967a587-5d79-4db5-ba16-4def89038996_partially-cloudy.png",
+      "PackagePath": "staticwebassets\\img\\user7\\article\\21\\articleImage\\7967a587-5d79-4db5-ba16-4def89038996_partially-cloudy.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\article\\22\\articleImage\\69645aa9-7159-4617-9efa-cd037f42446c_2b3f6ff00db7a1efae21d85cfb8995eaff2da8d8.png",
+      "PackagePath": "staticwebassets\\img\\user7\\article\\22\\articleImage\\69645aa9-7159-4617-9efa-cd037f42446c_2b3f6ff00db7a1efae21d85cfb8995eaff2da8d8.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\article\\22\\content\\3e47fcec-1705-4dfc-a2b8-7e7a8402c951_partially-cloudy.png",
+      "PackagePath": "staticwebassets\\img\\user7\\article\\22\\content\\3e47fcec-1705-4dfc-a2b8-7e7a8402c951_partially-cloudy.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\article\\24\\articleImage\\3ed96c8e-e7ab-453a-bde5-3865fd74299f_partially-cloudy.png",
+      "PackagePath": "staticwebassets\\img\\user7\\article\\24\\articleImage\\3ed96c8e-e7ab-453a-bde5-3865fd74299f_partially-cloudy.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\article\\24\\content\\e20104ba-3e5a-47c8-b765-d08c13cb051f_partially-cloudy.png",
+      "PackagePath": "staticwebassets\\img\\user7\\article\\24\\content\\e20104ba-3e5a-47c8-b765-d08c13cb051f_partially-cloudy.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\article\\26\\articleImage\\4a553e51-ad2c-4828-855f-844225a33c72_images.jpg",
+      "PackagePath": "staticwebassets\\img\\user7\\article\\26\\articleImage\\4a553e51-ad2c-4828-855f-844225a33c72_images.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\article\\26\\content\\5838c1e1-6cbe-4919-a4aa-a29046361e9e_20160825003352.png",
+      "PackagePath": "staticwebassets\\img\\user7\\article\\26\\content\\5838c1e1-6cbe-4919-a4aa-a29046361e9e_20160825003352.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\article\\29\\articleImage\\ead6cfc5-8f43-4f93-9882-ff5b2c89ebcb_caption (6).jpg",
+      "PackagePath": "staticwebassets\\img\\user7\\article\\29\\articleImage\\ead6cfc5-8f43-4f93-9882-ff5b2c89ebcb_caption (6).jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\article\\29\\content\\5ccc1040-4f40-4eda-8882-62d6613f5c6c_caption (8).jpg",
+      "PackagePath": "staticwebassets\\img\\user7\\article\\29\\content\\5ccc1040-4f40-4eda-8882-62d6613f5c6c_caption (8).jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\article\\29\\content\\d5f63f0d-0003-44db-ae96-f2cab7d8fd17_caption (7).jpg",
+      "PackagePath": "staticwebassets\\img\\user7\\article\\29\\content\\d5f63f0d-0003-44db-ae96-f2cab7d8fd17_caption (7).jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\article\\30\\articleImage\\c10b089d-0f35-4cd7-83c0-f4df80c49903_caption (3).jpg",
+      "PackagePath": "staticwebassets\\img\\user7\\article\\30\\articleImage\\c10b089d-0f35-4cd7-83c0-f4df80c49903_caption (3).jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\article\\30\\content\\0d08258e-4e28-4abc-a13c-35e620472cfd_caption (4).jpg",
+      "PackagePath": "staticwebassets\\img\\user7\\article\\30\\content\\0d08258e-4e28-4abc-a13c-35e620472cfd_caption (4).jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\article\\30\\content\\b3d1f305-e527-4c4f-b7e6-0185f16b8413_caption (5).jpg",
+      "PackagePath": "staticwebassets\\img\\user7\\article\\30\\content\\b3d1f305-e527-4c4f-b7e6-0185f16b8413_caption (5).jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\article\\31\\articleImage\\c68dfa01-8c22-452d-a3af-d31d326c1184_caption.jpg",
+      "PackagePath": "staticwebassets\\img\\user7\\article\\31\\articleImage\\c68dfa01-8c22-452d-a3af-d31d326c1184_caption.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\article\\31\\content\\1984360e-d70b-4ffb-ae32-082125137cb6_caption (1).jpg",
+      "PackagePath": "staticwebassets\\img\\user7\\article\\31\\content\\1984360e-d70b-4ffb-ae32-082125137cb6_caption (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\article\\31\\content\\33ed8d58-e938-4bd8-9aa0-25b6062d72a5_caption (2).jpg",
+      "PackagePath": "staticwebassets\\img\\user7\\article\\31\\content\\33ed8d58-e938-4bd8-9aa0-25b6062d72a5_caption (2).jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\headshot\\443d051e-7c24-46d2-a4e3-134a46c77511_travel2.jpg",
+      "PackagePath": "staticwebassets\\img\\user7\\headshot\\443d051e-7c24-46d2-a4e3-134a46c77511_travel2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\headshot\\6dbceddc-67a3-4769-b086-ee6e33706b19_2b3f6ff00db7a1efae21d85cfb8995eaff2da8d8.png",
+      "PackagePath": "staticwebassets\\img\\user7\\headshot\\6dbceddc-67a3-4769-b086-ee6e33706b19_2b3f6ff00db7a1efae21d85cfb8995eaff2da8d8.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\headshot\\e7f57bed-8f04-4125-85ae-81e4997533f6_20160825003352.png",
+      "PackagePath": "staticwebassets\\img\\user7\\headshot\\e7f57bed-8f04-4125-85ae-81e4997533f6_20160825003352.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\headshot\\f950f3f0-faaa-4a30-92ff-368606461c41_partially-cloudy.png",
+      "PackagePath": "staticwebassets\\img\\user7\\headshot\\f950f3f0-faaa-4a30-92ff-368606461c41_partially-cloudy.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\photo\\20160825003352_20240326102132.png",
+      "PackagePath": "staticwebassets\\img\\user7\\photo\\20160825003352_20240326102132.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\photo\\2b3f6ff00db7a1efae21d85cfb8995eaff2da8d8_20240326101817.png",
+      "PackagePath": "staticwebassets\\img\\user7\\photo\\2b3f6ff00db7a1efae21d85cfb8995eaff2da8d8_20240326101817.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\photo\\2b3f6ff00db7a1efae21d85cfb8995eaff2da8d8_20240326102101.png",
+      "PackagePath": "staticwebassets\\img\\user7\\photo\\2b3f6ff00db7a1efae21d85cfb8995eaff2da8d8_20240326102101.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\photo\\2b3f6ff00db7a1efae21d85cfb8995eaff2da8d8_20240326102114.png",
+      "PackagePath": "staticwebassets\\img\\user7\\photo\\2b3f6ff00db7a1efae21d85cfb8995eaff2da8d8_20240326102114.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\photo\\images_20240326102138.jpg",
+      "PackagePath": "staticwebassets\\img\\user7\\photo\\images_20240326102138.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user7\\photo\\userImageDefault_20240401110233.jpg",
+      "PackagePath": "staticwebassets\\img\\user7\\photo\\userImageDefault_20240401110233.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user8\\album\\台南行\\6569.jpg_wh1200_20240409225626.jpg",
+      "PackagePath": "staticwebassets\\img\\user8\\album\\台南行\\6569.jpg_wh1200_20240409225626.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user8\\album\\台南行\\cherry-blossoms-656965_640_20240409225627.jpg",
+      "PackagePath": "staticwebassets\\img\\user8\\album\\台南行\\cherry-blossoms-656965_640_20240409225627.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user8\\album\\台南行\\istockphoto-506472311-612x612_20240409225627.jpg",
+      "PackagePath": "staticwebassets\\img\\user8\\album\\台南行\\istockphoto-506472311-612x612_20240409225627.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user8\\album\\旅遊\\6569.jpg_wh1200_20240410091507.jpg",
+      "PackagePath": "staticwebassets\\img\\user8\\album\\旅遊\\6569.jpg_wh1200_20240410091507.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user8\\album\\旅遊\\6569.jpg_wh1200_20240410095949.jpg",
+      "PackagePath": "staticwebassets\\img\\user8\\album\\旅遊\\6569.jpg_wh1200_20240410095949.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user8\\album\\旅遊\\IMG_0382_20240410091507.jpeg",
+      "PackagePath": "staticwebassets\\img\\user8\\album\\旅遊\\IMG_0382_20240410091507.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user8\\album\\旅遊\\caption (10)_20240403151106.jpg",
+      "PackagePath": "staticwebassets\\img\\user8\\album\\旅遊\\caption (10)_20240403151106.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user8\\album\\旅遊\\caption (7)_20240403151106.jpg",
+      "PackagePath": "staticwebassets\\img\\user8\\album\\旅遊\\caption (7)_20240403151106.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user8\\album\\旅遊\\caption (8)_20240403151106.jpg",
+      "PackagePath": "staticwebassets\\img\\user8\\album\\旅遊\\caption (8)_20240403151106.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user8\\album\\旅遊\\caption (9)_20240403151106.jpg",
+      "PackagePath": "staticwebassets\\img\\user8\\album\\旅遊\\caption (9)_20240403151106.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user8\\album\\旅遊\\caption_20240403151106.jpg",
+      "PackagePath": "staticwebassets\\img\\user8\\album\\旅遊\\caption_20240403151106.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user8\\album\\旅遊\\cherry-blossoms-656965_640_20240410095949.jpg",
+      "PackagePath": "staticwebassets\\img\\user8\\album\\旅遊\\cherry-blossoms-656965_640_20240410095949.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user8\\album\\旅遊\\istockphoto-506472311-612x612_20240410095949.jpg",
+      "PackagePath": "staticwebassets\\img\\user8\\album\\旅遊\\istockphoto-506472311-612x612_20240410095949.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user8\\album\\旅遊\\istockphoto-517188688-612x612_20240410091507.jpg",
+      "PackagePath": "staticwebassets\\img\\user8\\album\\旅遊\\istockphoto-517188688-612x612_20240410091507.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user8\\article\\32\\articleImage\\1adaba81-9d72-4214-84b0-c1721ee4d70b_caption (9).jpg",
+      "PackagePath": "staticwebassets\\img\\user8\\article\\32\\articleImage\\1adaba81-9d72-4214-84b0-c1721ee4d70b_caption (9).jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user8\\article\\32\\content\\95a8c16e-073d-4123-bb6c-61c4ea63ac78_caption (10).jpg",
+      "PackagePath": "staticwebassets\\img\\user8\\article\\32\\content\\95a8c16e-073d-4123-bb6c-61c4ea63ac78_caption (10).jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user8\\headshot\\b7196b70-6397-4aed-83a5-9a428c364dd3_20160825003352.png",
+      "PackagePath": "staticwebassets\\img\\user8\\headshot\\b7196b70-6397-4aed-83a5-9a428c364dd3_20160825003352.png"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user8\\photo\\IMG_0382_20240409124549.jpeg",
+      "PackagePath": "staticwebassets\\img\\user8\\photo\\IMG_0382_20240409124549.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user8\\photo\\caption (1)_20240403151036.jpg",
+      "PackagePath": "staticwebassets\\img\\user8\\photo\\caption (1)_20240403151036.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user8\\photo\\caption (2)_20240403151036.jpg",
+      "PackagePath": "staticwebassets\\img\\user8\\photo\\caption (2)_20240403151036.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user8\\photo\\caption (3)_20240403151036.jpg",
+      "PackagePath": "staticwebassets\\img\\user8\\photo\\caption (3)_20240403151036.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user8\\photo\\caption (4)_20240403151036.jpg",
+      "PackagePath": "staticwebassets\\img\\user8\\photo\\caption (4)_20240403151036.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user8\\photo\\caption (5)_20240403151036.jpg",
+      "PackagePath": "staticwebassets\\img\\user8\\photo\\caption (5)_20240403151036.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user8\\photo\\caption (6)_20240403151036.jpg",
+      "PackagePath": "staticwebassets\\img\\user8\\photo\\caption (6)_20240403151036.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\img\\user8\\photo\\cherry-blossoms-656965_640_20240409125528.jpg",
+      "PackagePath": "staticwebassets\\img\\user8\\photo\\cherry-blossoms-656965_640_20240409125528.jpg"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\js\\Friend.js",
+      "PackagePath": "staticwebassets\\js\\Friend.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\js\\FriendRequest.js",
+      "PackagePath": "staticwebassets\\js\\FriendRequest.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\js\\FriendRequestList.js",
+      "PackagePath": "staticwebassets\\js\\FriendRequestList.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\js\\NumberofFriendRequests.js",
+      "PackagePath": "staticwebassets\\js\\NumberofFriendRequests.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\js\\ai\\changeButton.js",
+      "PackagePath": "staticwebassets\\js\\ai\\changeButton.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\js\\ai\\golocation.js",
+      "PackagePath": "staticwebassets\\js\\ai\\golocation.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\js\\ai\\golocation2.js",
+      "PackagePath": "staticwebassets\\js\\ai\\golocation2.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\js\\ai\\intelligence2.js",
+      "PackagePath": "staticwebassets\\js\\ai\\intelligence2.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\js\\ai\\step.js",
+      "PackagePath": "staticwebassets\\js\\ai\\step.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\js\\ai\\switchbar.js",
+      "PackagePath": "staticwebassets\\js\\ai\\switchbar.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\js\\ai\\typewrite.js",
+      "PackagePath": "staticwebassets\\js\\ai\\typewrite.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\js\\pagination.js",
+      "PackagePath": "staticwebassets\\js\\pagination.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\jquery\\dist\\jquery-ui.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery-ui.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\洪聖哲\\Desktop\\0409\\409-2\\409-4\\TravelNotes\\TravelNotes\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TravelNotes.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.TravelNotes.props",
+      "PackagePath": "build\\TravelNotes.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.TravelNotes.props",
+      "PackagePath": "buildMultiTargeting\\TravelNotes.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.TravelNotes.props",
+      "PackagePath": "buildTransitive\\TravelNotes.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,264 @@
+﻿
+@{
+    ViewData["Title"] = "文章頁面";
+}
+@model article
+@{
+    article target = Model;
+    var travelTime = (DateTime)target!.TravelTime!;
+    var publishTime = (DateTime)target!.PublishTime!;
+    string content = target!.Contents!;
+    users loginUser = ViewBag.loginUser;
+}
+<style>
+    #notification {
+        display: none;
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--color2);
+        color: var(--color4);
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+    }
+
+    .headShotImg {
+        border-radius: 50%;
+        width: 50px; /* 設置圖片的寬度 */
+        height: 50px; /* 設置圖片的高度 */
+        cursor:pointer
+    }
+
+    #messageBoard{
+        background-color: rgb(241, 241, 241);
+        border-radius: 10px; /* 圆角半径 */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* 阴影 */
+        margin-top:10px;
+        padding:5px;
+    }
+
+        #messageBoard>.row{
+            margin:2px
+        }
+
+    .messageContents{
+        background-color: white;
+        word-wrap: break-word;
+        border-radius:5px;
+        padding:2px;
+    }
+    #messageInput{
+        background-color: white;
+    }
+    .custom-badge {
+        background-color: rgb(236, 220, 126); /* 设置背景颜色为黄色 */
+        color: #212529; /* 设置文本颜色 */
+        padding: 5px 10px; /* 设置内边距 */
+        border-radius: 0.25rem; /* 设置圆角 */
+    }
+    .btn-msg{
+        background-color: var(--color2);
+        color: white;
+    }
+    .topRightPanel{
+        padding:5px;
+        margin:5px;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+@* <script src="~/lib/_js/jquery-3.6.0.js"></script> *@
+<script src="https://cdn.tiny.cloud/1/cx5w3vy6l6bg0senjow539pjj585n4wqopo9s4r3viuyx88c/tinymce/6/tinymce.min.js"
+        referrerpolicy="origin"></script>
+<input type="text" id="articleId" value="@target.ArticleId" style="display:none;">
+<input type="text" id="userId" value="@target.UserId" style="display:none;">
+<div class="container">
+
+    <div class="row justify-content-start">
+        <div class="col-sm-9 ">
+            <div class="row">
+                <h1 id="title">@target.Title</h1>
+                <h5 id="subtitle">@target.Subtitle</h5>            
+            </div>
+            <div class="row">
+                <div class="col-auto">
+                    <img src="@ViewBag.user.Headshot" class="headShotImg" alt="调整大小图像" onclick="personalPageView(@ViewBag.user.UserId)">
+                </div>
+                <div class="col-auto">
+                    <span>@ViewBag.user.Nickname</span>
+                    <br />
+                    <span id="publishTime">@publishTime</span>
+                </div>
+                
+            </div>  
+            <div class="row">
+                <div class="col-auto">
+                    <span>旅行地點:</span>
+                    <span>@(ViewBag.spot == null ? "" : ViewBag.spot.ScenicSpotName)</span>
+                </div>   
+            </div >
+            <div class="row"> 
+                <span>旅遊時間:@travelTime.ToString("yyyy/MM/dd")</span>
+            </div>
+            <div class="row">
+                <div class="col-auto">
+                    @foreach (OtherTags item in ViewBag.otherTags)
+                    {
+                    <span class="badge custom-badge">@item.OtherTagName</span>
+                    }
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-sm-3 ">
+            <div class="row justify-content-end topRightPanel" >
+                <div class="col-auto ml-auto" >
+                    <i class="fa-regular fa-thumbs-up fa-2xl btn" style="color: #da3f0b;" id="likeButton"></i>
+                    <span id="likeCount">@target.LikeCount</span>
+                </div>
+                <div class="col-auto ml-auto">
+                    <span>瀏覽人數:</span><span id="pageView">@target.PageView</span>
+                </div>
+            </div>
+
+            <div class="row justify-content-end topRightPanel">
+                <div class="col-auto ml-auto">
+                    <img src="@target.Images" id="articleImage" style="width: 200px; height: 200px; " />
+                </div>
+
+            </div>
+            @if(loginUser.UserId == target.UserId)
+            {
+                <div class="row justify-content-end topRightPanel">
+                    <div class="col-auto ml-auto">
+                        <a class="btn btn-secondary buttons" href="/Article/Draft?articleId=@target.ArticleId">編輯此文章</a>
+                    </div>
+
+                </div>
+            }
+            
+        </div>
+    </div>
+</div>
+
+<div id="content">
+    
+</div>
+<div id="messageBoard">
+    @foreach (var item in ViewBag.messageBoards)
+    {
+        <div class="row justify-content-center align-items-center">
+            <div class="col-2" onclick="personalPageView(@item.UserId)">
+                <img class="headShotImg" src="@item.Headshot"/>
+                <span class="Nickname">@item.Nickname</span>
+            </div>
+            <div class="col-8">
+                <div class="messageContents">@item.Contents</div>
+            </div>
+            <div class="col-2 text-end">
+                <span>@item.MessageTime</span>
+            </div>
+
+
+            
+        </div>
+    }
+    @if (loginUser.UserId == 0)
+    {
+        <div class="row">
+            <div class="col-12 text-center">
+                <p>您尚未登入</p>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="row justify-content-center align-items-center">
+            <div class="col-2">
+                <img class="headShotImg" src="@loginUser.Headshot" onclick="personalPageView(@loginUser.UserId)" />
+                <span class="Nickname">@loginUser.Nickname</span>
+            </div>
+            <div class="col-8">
+                <input type="text" id="messageInput" class="form-control articleInput" placeholder="留言......"/>
+            </div>
+            <div class="col-2">
+                <button id="messageButton" class="btn btn-msg" >發佈</button>
+            </div>
+        </div>
+    }
+    
+</div>
+<div id="notification"></div>
+<script>
+
+
+    let articleId = $('#articleId').val();
+    let backendData = @Html.Raw(Json.Serialize(content));
+    if (backendData == null) {
+        backendData = "";
+    }
+    console.log(backendData);
+    $(function () {
+        $('#content').html(backendData);        
+        
+        $('#likeButton').on('click', function () {
+            $.ajax({
+                type: "post",
+                url: "/Article/LikeArticle",
+                data: {
+                    "articleId": articleId
+                },
+                success: function (likeCount) {
+                    $('#likeCount').text(likeCount)
+                }
+            });
+        });
+        $('#messageButton').on('click', function () {
+            if ($('#messageInput').val() == "") {
+                showNotification("請輸入留言");
+                return;
+            }
+            $.ajax({
+                type: "post",
+                url: "/Article/InsertMessage",
+                data: {
+                    "articleId": articleId,
+                    "message": $('#messageInput').val()
+                },
+                success: function (msg) {
+                    if (msg == "Ok") {
+                        document.location = '/Article/ArticleView?articleId=' + articleId;
+                    }
+                    else {
+                        document.location = '/Member/Login';
+                    }
+                }
+            });
+        });
+        setTimeout(viewArticle,5000)
+    });
+    function personalPageView(userId) {
+        document.location.href = "/PersonalPage/PersonalPage?userId="
+        window.location = "/PersonalPage/PersonalPage?userId=" + userId;
+    }
+    function viewArticle(){
+        $.ajax({
+            type: "post",
+            url: "/Article/ViewArticle",
+            data: {
+                "articleId": articleId
+            },
+            success: function (pageView) {
+                $('#pageView').text(pageView)
+            }
+        });
+    }
+    function showNotification(message) {
+        $("#notification").text(message).css("display", "block")
+        setTimeout(function () {
+            $("#notification").css("display", "none");
+        }, 1000)
+    }
+</script>
